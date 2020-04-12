@@ -14,8 +14,7 @@ public class App {
         Temporada laMejorTemporada = bb.getTemporada(5);
 
         Episodio elTop;
-
-        
+ 
         elTop = laMejorTemporada.getEpisodio(7);
 
         elTop.reproducir();
