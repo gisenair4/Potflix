@@ -9,15 +9,22 @@ public class App {
 
         miPotflix.inicializarCatalogo();
 
-        Serie bb = miPotflix.buscarSerie("Breaking Bad");
+        Serie bb = miPotflix.buscarSerie("The Walking Dead");
 
         Temporada laMejorTemporada = bb.getTemporada(5);
 
         Episodio elTop;
  
-        elTop = laMejorTemporada.getEpisodio(7);
+        elTop = laMejorTemporada.getEpisodio(2);
 
         elTop.reproducir();
+
+        Episodio otroEpi;
+
+        otroEpi = laMejorTemporada.getEpisodio(9);
+
+        otroEpi.reproducir();
+        
         
 
     }
