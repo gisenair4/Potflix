@@ -50,14 +50,14 @@ public class Potflix {
         Temporada t5 = new Temporada();
         t5.numero = 5;
         Episodio ep = new Episodio();
-        ep.numero = 7;
-        ep.nombre = "Di mi nombre";
-        ep.duracion = 43;
+        ep.setNumero(7);
+        ep.setNombre("Di mi nombre");
+        ep.setDuracion(43);
         t5.episodios.add(ep);
         Episodio epOtro = new Episodio();
-        epOtro.numero = 5;
-        epOtro.nombre = "Ozymandias";
-        epOtro.duracion = 41;
+        epOtro.setNumero(5);
+        epOtro.setNombre("Ozymandias");
+        epOtro.setDuracion(41);
         t5.episodios.add(epOtro);
         breakingB.temporadas.add(t5);
         this.serie.add(breakingB);
@@ -78,16 +78,16 @@ public class Potflix {
         Temporada t2 = new Temporada();
         t2.numero = 2;
         Episodio epi = new Episodio();
-        epi.numero = 1;
-        epi.nombre = "What lies ahead";
-        epi.duracion = 45;
+        epi.setNumero (1);
+        epi.setNombre("What lies ahead");
+        epi.setDuracion(45);
         t2.episodios.add(epi);
 
         Episodio epiOtro = new Episodio();
 
-        epiOtro.numero = 2;
-        epiOtro.nombre = "Bloodletting";
-        epiOtro.duracion = 48;
+        epiOtro.setNumero(2);
+        epiOtro.setNombre("Bloodletting");
+        epiOtro.setDuracion(48);
         
 
         t2.episodios.add(epiOtro);
@@ -108,7 +108,7 @@ public class Potflix {
         Episodio epiii = new Episodio(9, "The suicide king");
         //epiii.numero = 9;
         //epiii.nombre = "The suicide king";
-        epiii.duracion = 48;
+        epiii.setDuracion(48);
         t3.episodios.add(epiii);
 
         theWalkingDead.temporadas.add(t3);
@@ -118,7 +118,7 @@ public class Potflix {
 
         //websodio.numero = 1;
         //websodio.nombre = "A new day";
-        websodio.duracion = 20;
+        websodio.setDuracion(20);
         websodio.url = "http://fdjfd.com";
         
         t3.episodios.add(websodio);
@@ -127,7 +127,7 @@ public class Potflix {
 
         //websodio.numero = 2;
         //websodio.nombre = "Alone";
-        websodio.duracion = 20;
+        websodio.setDuracion(20);
         websodio.url = "http://fdjfd.com";
         
         t3.episodios.add(websodio);
