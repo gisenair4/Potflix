@@ -2,6 +2,8 @@ package app;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import app.personas.Actor;
 /**
  * Potflix
  */
@@ -16,7 +18,7 @@ public class Potflix {
 
     public List<Pelicula> peliculas = new ArrayList<>();
     public List<Serie> serie = new ArrayList<>();
-
+    public List<INominable> nominables = new ArrayList<>();
     public Contenido buscarPorTitulo(String titulo) {
         return null;
 
@@ -42,6 +44,12 @@ public class Potflix {
     
         Serie breakingB = new Serie();
         breakingB.titulo = "Breaking Bad";
+
+        Actor actor1 = new Actor();
+        actor1.nombre = "Brian Crasnton";
+
+        this.nominables.add(actor1);
+
 
         Genero genero = new Genero();
         genero.nombre = "Drama";

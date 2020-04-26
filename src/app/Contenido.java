@@ -2,6 +2,9 @@ package app;
 
 import java.util.List;
 
+import app.personas.Actor;
+import app.personas.Director;
+
 public class Contenido {
     public String titulo;
     public List < String > premios;
